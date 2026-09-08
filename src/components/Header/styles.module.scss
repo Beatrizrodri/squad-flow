@@ -1,0 +1,105 @@
+.container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  justify-content: space-between;
+
+  h1 {
+    font-size: x-large;
+    font-family: sans-serif;
+    color: black;
+  }
+}
+
+.content {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: right;
+  gap: 12px;
+}
+
+.searchContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #dedfe3;
+  border: 1px solid #bdc2cd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  max-width: 280px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:focus-within {
+    border-color: #373737;
+    box-shadow: 0 0 0 2px rgba(63, 63, 63, 0.2);
+
+    .searchIcon {
+      color: #373737;
+    }
+  }
+}
+
+.searchIcon {
+  color: #74777f;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.searchInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #74777f;
+  font-size: 14px;
+
+  &::placeholder {
+    color: #74777f;
+  }
+}
+
+.notificationButton {
+  background-color: transparent;
+  border: none;
+}
+
+.userButton {
+  width: min-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1a365d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
