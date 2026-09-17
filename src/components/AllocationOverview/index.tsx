@@ -15,7 +15,7 @@ const mock = {
 function PieCenterHtml({ children }: { children: React.ReactNode }) {
   const { width, height, left, top } = useDrawingArea()
 
-  const boxSize = 130
+  const boxSize = 280
 
   return (
     <foreignObject
@@ -48,17 +48,17 @@ export function AllocationOverview() {
     <div className={styles.card}>
       <h2 className={styles.title}>{mock.title}</h2>
 
-      <div>
+      <div className={styles.content}>
         <PieChart
           series={[
             {
               data,
-              innerRadius: 92,
+              innerRadius: 100,
               paddingAngle: 1
             }
           ]}
-          width={240}
-          height={240}
+          width={280}
+          height={280}
           slotProps={{
             legend: {
               direction: 'vertical',
@@ -69,8 +69,9 @@ export function AllocationOverview() {
               sx: {
                 gap: '20px',
                 fontFamily: 'Poppins',
-                fontSize: 16,
-                fontWeight: '500'
+                fontSize: 18,
+                fontWeight: '500',
+                marginLeft: '34px'
               }
             }
           }}

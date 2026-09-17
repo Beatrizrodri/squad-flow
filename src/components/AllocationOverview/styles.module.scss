@@ -1,5 +1,6 @@
 .card {
-  width: 500px;
+  width: 40%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -63,7 +64,7 @@
 .statLabel {
   margin-top: 4px;
   font-family: Poppins, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: #6b7280;
 }

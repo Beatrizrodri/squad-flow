@@ -3,6 +3,7 @@ import styles from './App.module.scss'
 import { SideBar } from './components/SideBar'
 import { Header } from './components/Header'
 import { AllocationOverview } from './components/AllocationOverview'
+import { ResourceUtilizationChart } from './components/ResourceUtilizationChart'
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
         <Header />
         <div className={styles.boardContent}>
           <AllocationOverview />
+          <ResourceUtilizationChart />
         </div>
       </div>
     </div>
