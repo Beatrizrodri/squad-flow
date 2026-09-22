@@ -4,6 +4,7 @@ import { SideBar } from './components/SideBar'
 import { Header } from './components/Header'
 import { AllocationOverview } from './components/AllocationOverview'
 import { ResourceUtilizationChart } from './components/ResourceUtilizationChart'
+import { AlertsDescription } from './components/AlertsDescription'
 
 export function App() {
   return (
@@ -11,9 +12,10 @@ export function App() {
       <SideBar />
       <div className={styles.content}>
         <Header />
-        <div className={styles.boardContent}>
+        <div className={styles.boardContainer}>
           <AllocationOverview />
           <ResourceUtilizationChart />
+          <AlertsDescription />
         </div>
       </div>
     </div>

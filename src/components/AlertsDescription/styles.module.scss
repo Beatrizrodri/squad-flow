@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #272011;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
