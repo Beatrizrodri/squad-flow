@@ -9,10 +9,16 @@
 
 .boardContainer {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 80px);
   background-color: #b9bfd0;
   padding: 28px;
-  gap: 28px;
+  gap: 14px;
   display: grid;
   grid-template-columns: 2fr 3fr;
+}
+
+.dashboardColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }

@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { AllocationOverview } from './components/AllocationOverview'
 import { ResourceUtilizationChart } from './components/ResourceUtilizationChart'
 import { AlertsDescription } from './components/AlertsDescription'
+import { AllocationTable } from './components/AllocationTable'
 
 export function App() {
   return (
@@ -13,9 +14,14 @@ export function App() {
       <div className={styles.content}>
         <Header />
         <div className={styles.boardContainer}>
-          <AllocationOverview />
-          <ResourceUtilizationChart />
-          <AlertsDescription />
+          <div className={styles.dashboardColumn}>
+            <AllocationOverview />
+            <AlertsDescription />
+            <AllocationTable />
+          </div>
+          <div className={styles.dashboardColumn}>
+            <ResourceUtilizationChart />
+          </div>
         </div>
       </div>
     </div>

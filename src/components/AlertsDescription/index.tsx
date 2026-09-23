@@ -6,18 +6,18 @@ export function AlertsDescription() {
     <div className={styles.container}>
       <h1 className={styles.title}>Alerts Description</h1>
       <span>
-        <IoAlertCircle color="green" /> Update notification.
+        <IoAlertCircle color="#1fa700" /> Update notification.
       </span>
       <span>
-        <IoAlertCircle color="yellow" /> Resolution is required within a
+        <IoAlertCircle color="#ffb300" /> Resolution is required within a
         specific timeframe.
       </span>
       <span>
-        <IoAlertCircle color="orange" /> Resolution must be reached as soon as
+        <IoAlertCircle color="#ff7300" /> Resolution must be reached as soon as
         possible.
       </span>
       <span>
-        <IoAlertCircle color="red" /> Resolution must be immediate.
+        <IoAlertCircle color="#ff0000" /> Resolution must be immediate.
       </span>
     </div>
   )

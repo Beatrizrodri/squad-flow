@@ -53,12 +53,12 @@ export function AllocationOverview() {
           series={[
             {
               data,
-              innerRadius: 100,
+              innerRadius: 96,
               paddingAngle: 1
             }
           ]}
-          width={280}
-          height={280}
+          width={250}
+          height={250}
           slotProps={{
             legend: {
               direction: 'vertical',
