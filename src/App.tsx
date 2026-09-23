@@ -6,6 +6,7 @@ import { AllocationOverview } from './components/AllocationOverview'
 import { ResourceUtilizationChart } from './components/ResourceUtilizationChart'
 import { AlertsDescription } from './components/AlertsDescription'
 import { AllocationTable } from './components/AllocationTable'
+import { SquadsTable } from './components/SquadsTable'
 
 export function App() {
   return (
@@ -21,6 +22,7 @@ export function App() {
           </div>
           <div className={styles.dashboardColumn}>
             <ResourceUtilizationChart />
+            <SquadsTable />
           </div>
         </div>
       </div>
