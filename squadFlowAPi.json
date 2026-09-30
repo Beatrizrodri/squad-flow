@@ -38,12 +38,47 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "c987ad82-d9d4-40a0-aeec-c1a36f0c3649",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "resources",
+      "responses": [
+        {
+          "uuid": "91caee41-60cc-4755-98af-ad6b97bdfadd",
+          "body": "[\n  { \"id\": 1, \"role\": \"Developers\", \"utilized\": 92, \"total\": 100 },\n  { \"id\": 2, \"role\": \"Designers\", \"utilized\": 7, \"total\": 10 },\n  { \"id\": 3, \"role\": \"QAs\", \"utilized\": 25, \"total\": 25 },\n  { \"id\": 4, \"role\": \"PMs\", \"utilized\": 3, \"total\": 6 },\n  { \"id\": 5, \"role\": \"Supervisor\", \"utilized\": 8, \"total\": 10 },\n  { \"id\": 6, \"role\": \"Software Engineer\", \"utilized\": 19, \"total\": 20 }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
     {
       "type": "route",
       "uuid": "6a4e3219-de0b-4a5b-9065-1546deb4d10f"
+    },
+    {
+      "type": "route",
+      "uuid": "c987ad82-d9d4-40a0-aeec-c1a36f0c3649"
     }
   ],
   "proxyMode": false,
