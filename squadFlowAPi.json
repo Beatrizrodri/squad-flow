@@ -69,6 +69,37 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "7a732ea8-fe31-4ad1-9fed-0ff1b93e6cdc",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "members",
+      "responses": [
+        {
+          "uuid": "e3dc9b3e-d55b-45ef-aa3d-f28d6ce40d12",
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Maria Silva\",\n    \"role\": \"UI/UX Designer\",\n    \"availability\": \"Available\\n10h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"João Santos\",\n    \"role\": \"DevOps Engineer\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Lucas Souza\",\n    \"role\": \"Frontend Developer\",\n    \"availability\": \"Available\\n20h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Ana Costa\",\n    \"role\": \"Backend Developer\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Carlos Oliveira\",\n    \"role\": \"QA / Tester\",\n    \"availability\": \"Available\\n5h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Beatriz Lima\",\n    \"role\": \"Product Manager\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Rafael Mendes\",\n    \"role\": \"Fullstack Developer\",\n    \"availability\": \"Available\\n15h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Camila Duarte\",\n    \"role\": \"Data Analyst\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Felipe Rocha\",\n    \"role\": \"Frontend Developer\",\n    \"availability\": \"Available\\n30h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Juliana Martins\",\n    \"role\": \"UI/UX Designer\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 11,\n    \"name\": \"Thiago Barbosa\",\n    \"role\": \"Backend Developer\",\n    \"availability\": \"Available\\n10h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 12,\n    \"name\": \"Mariana Ribeiro\",\n    \"role\": \"Scrum Master\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 13,\n    \"name\": \"Gabriel Ferreira\",\n    \"role\": \"DevOps Engineer\",\n    \"availability\": \"Available\\n25h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 14,\n    \"name\": \"Larissa Monteiro\",\n    \"role\": \"Product Owner\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 15,\n    \"name\": \"Bruno Carvalho\",\n    \"role\": \"Security Engineer\",\n    \"availability\": \"Available\\n8h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 16,\n    \"name\": \"Fernanda Gomes\",\n    \"role\": \"QA / Tester\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 17,\n    \"name\": \"Diego Nogueira\",\n    \"role\": \"Mobile Developer\",\n    \"availability\": \"Available\\n12h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 18,\n    \"name\": \"Patrícia Azevedo\",\n    \"role\": \"Frontend Developer\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 19,\n    \"name\": \"Eduardo Ramos\",\n    \"role\": \"Data Engineer\",\n    \"availability\": \"Available\\n18h/week\",\n    \"avatarUrl\": \"\"\n  },\n  {\n    \"id\": 20,\n    \"name\": \"Vanessa Cunha\",\n    \"role\": \"Backend Developer\",\n    \"availability\": \"100% Allocated\",\n    \"avatarUrl\": \"\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
@@ -79,6 +110,10 @@
     {
       "type": "route",
       "uuid": "c987ad82-d9d4-40a0-aeec-c1a36f0c3649"
+    },
+    {
+      "type": "route",
+      "uuid": "7a732ea8-fe31-4ad1-9fed-0ff1b93e6cdc"
     }
   ],
   "proxyMode": false,
