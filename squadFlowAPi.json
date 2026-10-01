@@ -100,6 +100,37 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "91297b77-1af3-442b-b799-a6f3e041540f",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "allocation-overview",
+      "responses": [
+        {
+          "uuid": "db564ec3-7a1f-4933-b3b2-2d1069fa6cd8",
+          "body": "{\n  \"squadsTotal\": 15,\n  \"membersTotal\": 98,\n  \"active\": 12,\n  \"available\": 5,\n  \"utilized\": 15\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
@@ -114,6 +145,10 @@
     {
       "type": "route",
       "uuid": "7a732ea8-fe31-4ad1-9fed-0ff1b93e6cdc"
+    },
+    {
+      "type": "route",
+      "uuid": "91297b77-1af3-442b-b799-a6f3e041540f"
     }
   ],
   "proxyMode": false,
