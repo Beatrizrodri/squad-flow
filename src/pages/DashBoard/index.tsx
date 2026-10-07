@@ -14,7 +14,7 @@ export function DashboardPage() {
           <div className={styles.dashboardColumn}>
             <AllocationOverview />
             <AlertsDescription />
-            <AllocationTable />
+            <AllocationTable maxHeight={180} />
           </div>
           <div className={styles.dashboardColumn}>
             <ResourceUtilizationChart />
