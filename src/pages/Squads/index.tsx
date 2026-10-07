@@ -6,7 +6,7 @@ export function SquadsPage() {
     <div className={styles.container}>
       <h3 className={styles.title}>Squads Management</h3>
 
-      <SquadsTable maxHeight={720} expandable={true} />
+      <SquadsTable maxHeight={720} expandable={true} editable deletable />
     </div>
   )
 }

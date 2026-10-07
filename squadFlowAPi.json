@@ -131,12 +131,82 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "fb407c7a-8bf4-4aea-b28a-153a01b39243",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "squads/:id",
+      "responses": [
+        {
+          "uuid": "46780092-f9e4-4c6f-8c87-7034d1c47867",
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Faicon\",\n    \"members\": 4,\n    \"capacity\": 85,\n    \"project\": \"Amazon\",\n    \"status\": \"Delayed\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Apex Lab\",\n    \"members\": 3,\n    \"capacity\": 100,\n    \"project\": \"Netflix\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Orbit Code\",\n    \"members\": 2,\n    \"capacity\": 45,\n    \"project\": \"Spotify\",\n    \"status\": \"At Risk\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Vortex Dev\",\n    \"members\": 4,\n    \"capacity\": 90,\n    \"project\": \"Tesla\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Nova Stack\",\n    \"members\": 3,\n    \"capacity\": 72,\n    \"project\": \"Microsoft\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Pixel Forge\",\n    \"members\": 2,\n    \"capacity\": 63,\n    \"project\": \"Adobe\",\n    \"status\": \"At Risk\"\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Code Harbor\",\n    \"members\": 4,\n    \"capacity\": 38,\n    \"project\": \"Airbnb\",\n    \"status\": \"Delayed\"\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Blue Orbit\",\n    \"members\": 3,\n    \"capacity\": 96,\n    \"project\": \"Google\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Quantum Labs\",\n    \"members\": 2,\n    \"capacity\": 81,\n    \"project\": \"Nvidia\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Vertex Systems\",\n    \"members\": 3,\n    \"capacity\": 57,\n    \"project\": \"Uber\",\n    \"status\": \"At Risk\"\n  },\n  {\n    \"id\": 11,\n    \"name\": \"Code Pulse\",\n    \"members\": 2,\n    \"capacity\": 29,\n    \"project\": \"Slack\",\n    \"status\": \"Delayed\"\n  },\n  {\n    \"id\": 12,\n    \"name\": \"Iron Byte\",\n    \"members\": 3,\n    \"capacity\": 88,\n    \"project\": \"IBM\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 13,\n    \"name\": \"Cloud Nine\",\n    \"members\": 2,\n    \"capacity\": 74,\n    \"project\": \"Salesforce\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 14,\n    \"name\": \"Dev Nexus\",\n    \"members\": 3,\n    \"capacity\": 51,\n    \"project\": \"GitHub\",\n    \"status\": \"At Risk\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "0b5a8e3c-808f-4d5b-b2d8-6c4c0935c59d",
+      "type": "http",
+      "documentation": "",
+      "method": "patch",
+      "endpoint": "squads/:id",
+      "responses": [
+        {
+          "uuid": "cd7363d9-acd6-4dac-aaf0-8386657cf832",
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Faicon\",\n    \"members\": 4,\n    \"capacity\": 85,\n    \"project\": \"Amazon\",\n    \"status\": \"Delayed\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Apex Lab\",\n    \"members\": 3,\n    \"capacity\": 100,\n    \"project\": \"Netflix\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Orbit Code\",\n    \"members\": 2,\n    \"capacity\": 45,\n    \"project\": \"Spotify\",\n    \"status\": \"At Risk\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Vortex Dev\",\n    \"members\": 4,\n    \"capacity\": 90,\n    \"project\": \"Tesla\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Nova Stack\",\n    \"members\": 3,\n    \"capacity\": 72,\n    \"project\": \"Microsoft\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Pixel Forge\",\n    \"members\": 2,\n    \"capacity\": 63,\n    \"project\": \"Adobe\",\n    \"status\": \"At Risk\"\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Code Harbor\",\n    \"members\": 4,\n    \"capacity\": 38,\n    \"project\": \"Airbnb\",\n    \"status\": \"Delayed\"\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Blue Orbit\",\n    \"members\": 3,\n    \"capacity\": 96,\n    \"project\": \"Google\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Quantum Labs\",\n    \"members\": 2,\n    \"capacity\": 81,\n    \"project\": \"Nvidia\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Vertex Systems\",\n    \"members\": 3,\n    \"capacity\": 57,\n    \"project\": \"Uber\",\n    \"status\": \"At Risk\"\n  },\n  {\n    \"id\": 11,\n    \"name\": \"Code Pulse\",\n    \"members\": 2,\n    \"capacity\": 29,\n    \"project\": \"Slack\",\n    \"status\": \"Delayed\"\n  },\n  {\n    \"id\": 12,\n    \"name\": \"Iron Byte\",\n    \"members\": 3,\n    \"capacity\": 88,\n    \"project\": \"IBM\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 13,\n    \"name\": \"Cloud Nine\",\n    \"members\": 2,\n    \"capacity\": 74,\n    \"project\": \"Salesforce\",\n    \"status\": \"On Track\"\n  },\n  {\n    \"id\": 14,\n    \"name\": \"Dev Nexus\",\n    \"members\": 3,\n    \"capacity\": 51,\n    \"project\": \"GitHub\",\n    \"status\": \"At Risk\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
     {
       "type": "route",
       "uuid": "6a4e3219-de0b-4a5b-9065-1546deb4d10f"
+    },
+    {
+      "type": "route",
+      "uuid": "0b5a8e3c-808f-4d5b-b2d8-6c4c0935c59d"
+    },
+    {
+      "type": "route",
+      "uuid": "fb407c7a-8bf4-4aea-b28a-153a01b39243"
     },
     {
       "type": "route",
