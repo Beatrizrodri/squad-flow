@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import styles from './styles.module.scss'
 import Logo from '../../assets/LogoSquadFlow.png'
 import {
@@ -9,6 +10,12 @@ import {
 } from 'react-icons/lu'
 
 export function SideBar() {
+  const navigate = useNavigate()
+
+  const handleNavigateToSquads = (): void => {
+    navigate('/squads')
+  }
+
   return (
     <>
       <div className={styles.container}>
@@ -16,7 +23,7 @@ export function SideBar() {
           <img src={Logo} alt="" />
         </div>
         <div className={styles.options}>
-          <button className={styles.option}>
+          <button className={styles.option} onClick={handleNavigateToSquads}>
             <LuUsers size={22} /> Squads
           </button>
           <button className={styles.option}>
