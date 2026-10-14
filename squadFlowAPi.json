@@ -193,6 +193,37 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "2c68fb94-4058-4786-bcb1-f5614c9a7265",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "projects",
+      "responses": [
+        {
+          "uuid": "ecbd9864-7101-4d86-9ee6-84333ce52761",
+          "body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Cloud Migration & Logistics\",\n    \"description\": \"Migration of global legacy infrastructure and supply-chain tooling to cloud environments.\",\n    \"client\": \"Amazon\",\n    \"priority\": \"High Priority\",\n    \"status\": \"Delayed\",\n    \"deadline\": \"Nov 30, 2026\",\n    \"progress\": 42,\n    \"squad\": {\n      \"id\": 1,\n      \"name\": \"Faicon\",\n      \"members_count\": 4,\n      \"capacity_percentage\": 85\n    }\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Streaming Experience Redesign\",\n    \"description\": \"Interactive content delivery pipeline and user Interface rework for smart devices.\",\n    \"client\": \"Netflix\",\n    \"priority\": \"High Priority\",\n    \"status\": \"On Track\",\n    \"deadline\": \"Dec 15, 2026\",\n    \"progress\": 68,\n    \"squad\": {\n      \"id\": 2,\n      \"name\": \"Apex Lab\",\n      \"members_count\": 3,\n      \"capacity_percentage\": 100\n    }\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Audio Engine Optimization\",\n    \"description\": \"Upgrades to media buffer libraries and personalized playlist prediction server performance.\",\n    \"client\": \"Spotify\",\n    \"priority\": \"Medium Priority\",\n    \"status\": \"At Risk\",\n    \"deadline\": \"Oct 25, 2026\",\n    \"progress\": 80,\n    \"squad\": {\n      \"id\": 3,\n      \"name\": \"Orbit Code\",\n      \"members_count\": 2,\n      \"capacity_percentage\": 45\n    }\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Autopilot Core Enhancements\",\n    \"description\": \"Safety assurance algorithm validation and in-car telemetry data stream processing.\",\n    \"client\": \"Tesla\",\n    \"priority\": \"High Priority\",\n    \"status\": \"On Track\",\n    \"deadline\": \"Jan 20, 2027\",\n    \"progress\": 35,\n    \"squad\": {\n      \"id\": 4,\n      \"name\": \"Vortex Dev\",\n      \"members_count\": 4,\n      \"capacity_percentage\": 90\n    }\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Enterprise Productivity Integration\",\n    \"description\": \"Consolidating 365 services with external team workflows via automated API bridges.\",\n    \"client\": \"Microsoft\",\n    \"priority\": \"Medium Priority\",\n    \"status\": \"On Track\",\n    \"deadline\": \"Feb 10, 2027\",\n    \"progress\": 55,\n    \"squad\": {\n      \"id\": 5,\n      \"name\": \"Nova Stack\",\n      \"members_count\": 3,\n      \"capacity_percentage\": 72\n    }\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Design Workflow Automation\",\n    \"description\": \"Integration of cloud asset APIs with dynamic content creation tooling.\",\n    \"client\": \"Adobe\",\n    \"priority\": \"Low Priority\",\n    \"status\": \"At Risk\",\n    \"deadline\": \"Nov 15, 2026\",\n    \"progress\": 62,\n    \"squad\": {\n      \"id\": 6,\n      \"name\": \"Pixel Forge\",\n      \"members_count\": 2,\n      \"capacity_percentage\": 63\n    }\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Guest Safety Verification\",\n    \"description\": \"Background system validation and ID verification platform scale.\",\n    \"client\": \"Airbnb\",\n    \"priority\": \"High Priority\",\n    \"status\": \"Delayed\",\n    \"deadline\": \"Oct 31, 2026\",\n    \"progress\": 89,\n    \"squad\": {\n      \"id\": 7,\n      \"name\": \"Code Harbor\",\n      \"members_count\": 4,\n      \"capacity_percentage\": 38\n    }\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Search Ranking Optimization\",\n    \"description\": \"ML algorithms fine-tuning for query personalization at scale.\",\n    \"client\": \"Google\",\n    \"priority\": \"High Priority\",\n    \"status\": \"On Track\",\n    \"deadline\": \"Mar 05, 2027\",\n    \"progress\": 20,\n    \"squad\": {\n      \"id\": 8,\n      \"name\": \"Blue Orbit\",\n      \"members_count\": 3,\n      \"capacity_percentage\": 96\n    }\n  },\n  {\n    \"id\": 9,\n    \"name\": \"AI Pipeline Hardware Acceleration\",\n    \"description\": \"Infrastructure adjustment for optimal latency and distributed model training.\",\n    \"client\": \"Nvidia\",\n    \"priority\": \"High Priority\",\n    \"status\": \"On Track\",\n    \"deadline\": \"Dec 20, 2026\",\n    \"progress\": 48,\n    \"squad\": {\n      \"id\": 9,\n      \"name\": \"Quantum Labs\",\n      \"members_count\": 2,\n      \"capacity_percentage\": 81\n    }\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Rider Dispatch System Expansion\",\n    \"description\": \"New geographic routing models and surge pricing predictive APIs.\",\n    \"client\": \"Uber\",\n    \"priority\": \"Medium Priority\",\n    \"status\": \"At Risk\",\n    \"deadline\": \"Oct 15, 2026\",\n    \"progress\": 92,\n    \"squad\": {\n      \"id\": 10,\n      \"name\": \"Vertex Systems\",\n      \"members_count\": 3,\n      \"capacity_percentage\": 57\n    }\n  },\n  {\n    \"id\": 11,\n    \"name\": \"Workspace Live Analytics Dashboard\",\n    \"description\": \"Developing real-time interaction trackers and dashboard visualizations for enterprise tiers.\",\n    \"client\": \"Slack\",\n    \"priority\": \"Medium Priority\",\n    \"status\": \"Delayed\",\n    \"deadline\": \"Oct 28, 2026\",\n    \"progress\": 82,\n    \"squad\": {\n      \"id\": 11,\n      \"name\": \"Code Pulse\",\n      \"members_count\": 2,\n      \"capacity_percentage\": 29\n    }\n  },\n  {\n    \"id\": 12,\n    \"name\": \"Financial Ledger Modernization\",\n    \"description\": \"Refactoring banking microservices to IBM cloud securely and without latency gaps.\",\n    \"client\": \"IBM\",\n    \"priority\": \"High Priority\",\n    \"status\": \"On Track\",\n    \"deadline\": \"Jan 30, 2027\",\n    \"progress\": 15,\n    \"squad\": {\n      \"id\": 12,\n      \"name\": \"Iron Byte\",\n      \"members_count\": 3,\n      \"capacity_percentage\": 88\n    }\n  },\n  {\n    \"id\": 13,\n    \"name\": \"Integrations App Market V2\",\n    \"description\": \"Building a redesigned developers' app environment to ease CRM marketplace publishing.\",\n    \"client\": \"Salesforce\",\n    \"priority\": \"Low Priority\",\n    \"status\": \"On Track\",\n    \"deadline\": \"Feb 28, 2027\",\n    \"progress\": 25,\n    \"squad\": {\n      \"id\": 13,\n      \"name\": \"Cloud Nine\",\n      \"members_count\": 2,\n      \"capacity_percentage\": 74\n    }\n  },\n  {\n    \"id\": 14,\n    \"name\": \"Repository Security Insights Hub\",\n    \"description\": \"Integration of advanced vulnerability detection tools into the main repo view workflow.\",\n    \"client\": \"GitHub\",\n    \"priority\": \"High Priority\",\n    \"status\": \"At Risk\",\n    \"deadline\": \"Nov 12, 2026\",\n    \"progress\": 70,\n    \"squad\": {\n      \"id\": 14,\n      \"name\": \"Dev Nexus\",\n      \"members_count\": 3,\n      \"capacity_percentage\": 51\n    }\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
@@ -219,6 +250,10 @@
     {
       "type": "route",
       "uuid": "91297b77-1af3-442b-b799-a6f3e041540f"
+    },
+    {
+      "type": "route",
+      "uuid": "2c68fb94-4058-4786-bcb1-f5614c9a7265"
     }
   ],
   "proxyMode": false,
