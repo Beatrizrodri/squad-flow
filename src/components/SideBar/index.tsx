@@ -13,12 +13,16 @@ import {
 export function SideBar() {
   const navigate = useNavigate()
 
+  const handleNavigateToDashboard = (): void => {
+    navigate('/')
+  }
+
   const handleNavigateToSquads = (): void => {
     navigate('/squads')
   }
 
-  const handleNavigateToDashboard = (): void => {
-    navigate('/')
+  const handleNavigateToProjects = (): void => {
+    navigate('/projects')
   }
 
   return (
@@ -37,7 +41,7 @@ export function SideBar() {
             <LuUsers size={22} /> Squads
           </button>
 
-          <button className={styles.option}>
+          <button className={styles.option} onClick={handleNavigateToProjects}>
             <LuFolder size={22} /> Projects
           </button>
 

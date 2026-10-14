@@ -215,14 +215,14 @@ export function SquadRow({
 
             <ConfirmDialog
               open={deleteDialogOpen}
-              title="Excluir Squad"
+              title="Delete Squad"
               description={
                 <>
-                  Tem certeza que deseja excluir o squad{' '}
-                  <strong>{row.name}</strong>? Esta ação não pode ser desfeita.
+                  Are you sure you want to delete the squad{' '}
+                  <strong>{row.name}</strong>? This action cannot be undone.
                 </>
               }
-              confirmLabel="Excluir"
+              confirmLabel="Delete"
               confirmColor="error"
               onClose={handleCloseDeleteDialog}
               onConfirm={handleConfirmDelete}

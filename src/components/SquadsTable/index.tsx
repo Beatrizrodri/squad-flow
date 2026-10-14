@@ -57,7 +57,7 @@ export function SquadsTable({
         const data = await squadService.getAll()
         if (isMounted) setRows(data)
       } catch {
-        if (isMounted) setError('Não foi possível carregar os dados.')
+        if (isMounted) setError('Unable to load the data.')
       } finally {
         if (isMounted) setLoading(false)
       }
@@ -85,7 +85,7 @@ export function SquadsTable({
       onUpdateStatus?.(squadId, newStatus)
     } catch {
       setRows(previousRows)
-      setFeedbackError('Erro ao atualizar o status na API.')
+      setFeedbackError('Error updating status in the API.')
     }
   }
 
@@ -99,7 +99,7 @@ export function SquadsTable({
       onDeleteSquad?.(squadId)
     } catch {
       setRows(previousRows)
-      setFeedbackError('Erro ao deletar o squad na API.')
+      setFeedbackError('Error deleting the squad in the API.')
     }
   }
 
