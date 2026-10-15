@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './styles.module.scss'
 import Logo from '../../assets/LogoSquadFlow.png'
+import { IoNotificationsOutline } from 'react-icons/io5'
 import {
   LuUsers,
   LuChartPie,
-  LuFileText,
   LuFolder,
   LuSettings,
   LuLayoutDashboard
@@ -23,6 +23,10 @@ export function SideBar() {
 
   const handleNavigateToProjects = (): void => {
     navigate('/projects')
+  }
+
+  const handleNavigateToAllocation = (): void => {
+    navigate('/allocation')
   }
 
   return (
@@ -45,12 +49,15 @@ export function SideBar() {
             <LuFolder size={22} /> Projects
           </button>
 
-          <button className={styles.option}>
+          <button
+            className={styles.option}
+            onClick={handleNavigateToAllocation}
+          >
             <LuChartPie size={22} /> Allocations
           </button>
 
           <button className={styles.option}>
-            <LuFileText size={22} /> Reports
+            <IoNotificationsOutline size={22} /> Notifications
           </button>
 
           <button className={styles.option}>

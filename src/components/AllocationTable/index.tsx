@@ -11,24 +11,27 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import CircularProgress from '@mui/material/CircularProgress'
 import Chip from '@mui/material/Chip'
-import { LuUserRound } from 'react-icons/lu'
+import { LuArrowUpRight, LuUserRound } from 'react-icons/lu'
 
 import { memberService } from '../../services/memberService'
 import type { MemberAvailability } from '../../types'
 import styles from './styles.module.scss'
+import { useNavigate } from 'react-router-dom'
 
 interface AllocationTableProps {
   squadId?: string | number
   embedded?: boolean
   showTitle?: boolean
   maxHeight?: number | string
+  height?: number | string
 }
 
 export function AllocationTable({
   squadId,
   embedded = false,
   showTitle = true,
-  maxHeight = 350
+  maxHeight = 350,
+  height
 }: AllocationTableProps) {
   const [members, setMembers] = useState<MemberAvailability[]>([])
   const [isLoading, setIsLoading] = useState<boolean>(true)
@@ -55,9 +58,7 @@ export function AllocationTable({
         }
       } catch (err) {
         if (isMounted) {
-          setErrorMessage(
-            'Não foi possível carregar a disponibilidade dos membros.'
-          )
+          setErrorMessage('Unable to load member availability.')
         }
       } finally {
         if (isMounted) {
@@ -77,8 +78,22 @@ export function AllocationTable({
     return availability.toLowerCase().includes('100%')
   }
 
+  const navigate = useNavigate()
+
+  const handleNavigateToAllocation = (): void => {
+    navigate('/allocation')
+  }
+
   const tableContent = (
-    <TableContainer sx={{ maxHeight, minHeight: 120 }}>
+    <TableContainer
+      sx={{
+        flex: height ? 1 : 'unset',
+        height: height ?? 'auto',
+        maxHeight: height ? 'none' : maxHeight ?? 350,
+        minHeight: 120,
+        overflowY: 'auto'
+      }}
+    >
       {isLoading ? (
         <Box
           sx={{
@@ -98,8 +113,7 @@ export function AllocationTable({
         </Box>
       ) : (
         <Table
-          size={embedded ? 'small' : 'medium'}
-          stickyHeader
+          stickyHeader={Boolean(maxHeight && !height)}
           aria-label="individual availability table"
         >
           <TableHead>
@@ -233,6 +247,9 @@ export function AllocationTable({
       <Box
         sx={{
           width: '100%',
+          height: height ?? 'auto',
+          display: height ? 'flex' : 'block',
+          flexDirection: 'column',
           bgcolor: '#ffffff',
           borderRadius: 1.5,
           border: '1px solid #e2e8f0',
@@ -245,10 +262,36 @@ export function AllocationTable({
   }
 
   return (
-    <div className={styles.container}>
-      <Paper elevation={1} sx={{ borderRadius: 2, overflow: 'hidden' }}>
+    <div
+      className={styles.container}
+      style={{
+        height: height
+          ? typeof height === 'number'
+            ? `${height}px`
+            : height
+          : undefined
+      }}
+    >
+      <Paper
+        elevation={1}
+        sx={{
+          borderRadius: 2,
+          overflow: 'hidden',
+          height: height ? '100%' : 'auto',
+          display: height ? 'flex' : 'block',
+          flexDirection: 'column'
+        }}
+      >
         {showTitle && (
-          <Box sx={{ px: 2, py: 1.5 }}>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              px: 2,
+              py: 1.5,
+              flexShrink: 0
+            }}
+          >
             <Typography
               className={styles.title}
               variant="h6"
@@ -262,6 +305,13 @@ export function AllocationTable({
             >
               Individual Availability
             </Typography>
+
+            <button
+              className={styles.redirectionButton}
+              onClick={handleNavigateToAllocation}
+            >
+              <LuArrowUpRight size={24} />
+            </button>
           </Box>
         )}
         {tableContent}

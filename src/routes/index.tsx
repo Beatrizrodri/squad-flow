@@ -3,6 +3,7 @@ import { MainLayout } from '../layouts/MainLayout'
 import { SquadsPage } from '../pages/Squads'
 import { DashboardPage } from '../pages/DashBoard'
 import { ProjectsPage } from '../pages/Projects'
+import { AllocationPage } from '../pages/Allocation'
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: 'projects',
         element: <ProjectsPage />
+      },
+      {
+        path: 'allocation',
+        element: <AllocationPage />
       },
       {
         path: '*',
