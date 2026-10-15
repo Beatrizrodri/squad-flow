@@ -18,7 +18,7 @@ export function DashboardPage() {
           </div>
           <div className={styles.dashboardColumn}>
             <ResourceUtilizationChart />
-            <SquadsTable maxHeight={350} title="Squads" />
+            <SquadsTable maxHeight={330} title="Squads" />
           </div>
         </div>
       </div>

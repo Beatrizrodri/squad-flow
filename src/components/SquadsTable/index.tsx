@@ -16,6 +16,8 @@ import { squadService } from '../../services/squadService'
 import type { Squad, StatusType } from '../../types'
 import { SquadRow } from './squadRow'
 import styles from './styles.module.scss'
+import { LuArrowUpRight } from 'react-icons/lu'
+import { useNavigate } from 'react-router-dom'
 
 interface SquadsTableProps {
   title?: string
@@ -103,11 +105,25 @@ export function SquadsTable({
     }
   }
 
+  const navigate = useNavigate()
+
+  const handleNavigateToSquads = (): void => {
+    navigate('/squads')
+  }
+
   return (
-    <div className={`${styles.container || ''} ${className || ''}`}>
+    <div className={styles.container}>
       <Paper elevation={1} sx={{ borderRadius: 2, overflow: 'hidden' }}>
         {title && (
-          <Box sx={{ px: 2, py: 1 }}>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              px: 2,
+              py: 1.5,
+              flexShrink: 0
+            }}
+          >
             <Typography
               className={styles.title}
               variant="h6"
@@ -121,6 +137,12 @@ export function SquadsTable({
             >
               {title}
             </Typography>
+            <button
+              className={styles.redirectionButton}
+              onClick={handleNavigateToSquads}
+            >
+              <LuArrowUpRight size={24} />
+            </button>
           </Box>
         )}
 
