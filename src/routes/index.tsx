@@ -4,6 +4,7 @@ import { SquadsPage } from '../pages/Squads'
 import { DashboardPage } from '../pages/DashBoard'
 import { ProjectsPage } from '../pages/Projects'
 import { AllocationPage } from '../pages/Allocation'
+import { NotificationPage } from '../pages/Notification'
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
       {
         path: 'allocation',
         element: <AllocationPage />
+      },
+      {
+        path: 'notifications',
+        element: <NotificationPage />
       },
       {
         path: '*',

@@ -29,6 +29,10 @@ export function SideBar() {
     navigate('/allocation')
   }
 
+  const handleNavigateToNotifications = (): void => {
+    navigate('/notifications')
+  }
+
   return (
     <>
       <div className={styles.container}>
@@ -56,7 +60,10 @@ export function SideBar() {
             <LuChartPie size={22} /> Allocations
           </button>
 
-          <button className={styles.option}>
+          <button
+            className={styles.option}
+            onClick={handleNavigateToNotifications}
+          >
             <IoNotificationsOutline size={22} /> Notifications
           </button>
 

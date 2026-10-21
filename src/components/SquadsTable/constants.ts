@@ -1,12 +1,8 @@
 import type { StatusType } from '../../types'
 
-export const AVAILABLE_STATUSES: StatusType[] = [
-  'On Track',
-  'At Risk',
-  'Delayed'
-]
+export const AvailableStatus: StatusType[] = ['On Track', 'At Risk', 'Delayed']
 
-export const STATUS_STYLES: Record<
+export const StatusStyles: Record<
   StatusType,
   { bg: string; text: string; dot: string; border: string }
 > = {

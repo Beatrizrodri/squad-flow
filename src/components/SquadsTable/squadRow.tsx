@@ -21,7 +21,7 @@ import {
 
 import type { Squad, StatusType } from '../../types'
 import { AllocationTable } from '../AllocationTable'
-import { AVAILABLE_STATUSES, STATUS_STYLES } from './constants'
+import { AvailableStatus, StatusStyles } from './constants'
 
 interface SquadRowProps {
   row: Squad
@@ -46,7 +46,7 @@ export function SquadRow({
   const [menuAnchorEl, setMenuAnchorEl] = useState<null | HTMLElement>(null)
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false)
 
-  const currentStatus = STATUS_STYLES[row.status]
+  const currentStatus = StatusStyles[row.status]
   const isMenuOpen = Boolean(menuAnchorEl)
 
   const handleOpenMenu = (e: MouseEvent<HTMLElement>) => {
@@ -178,7 +178,7 @@ export function SquadRow({
                 }
               }}
             >
-              {AVAILABLE_STATUSES.map(status => (
+              {AvailableStatus.map(status => (
                 <MenuItem
                   key={status}
                   selected={status === row.status}
@@ -191,7 +191,7 @@ export function SquadRow({
                       width: 8,
                       height: 8,
                       borderRadius: '50%',
-                      backgroundColor: STATUS_STYLES[status].dot,
+                      backgroundColor: StatusStyles[status].dot,
                       mr: 1.5
                     }}
                   />

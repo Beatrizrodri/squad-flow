@@ -22,7 +22,6 @@ import { useNavigate } from 'react-router-dom'
 interface SquadsTableProps {
   title?: string
   maxHeight?: number | string
-  className?: string
   expandable?: boolean
   editable?: boolean
   deletable?: boolean
@@ -33,7 +32,6 @@ interface SquadsTableProps {
 export function SquadsTable({
   title,
   maxHeight = 'auto',
-  className,
   expandable = false,
   editable = false,
   deletable = false,

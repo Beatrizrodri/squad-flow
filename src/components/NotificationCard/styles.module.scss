@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1.2fr;
+
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  border-left: 6px solid transparent;
+
+  font-family: Roboto, sans-serif;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border-right: 1px solid rgb(212, 212, 212);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1a365d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 40px 10px 40px;
+  border-right: 1px solid rgb(212, 212, 212);
+}
+
+.headerDescription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 40px;
+}
+
+.readButton {
+  display: flex;
+  align-items: center;
+  padding: 2px 8px 2px 8px;
+  gap: 8px;
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  :hover {
+    color: #b91c1c;
+    background-color: #fee2e2;
+  }
+}

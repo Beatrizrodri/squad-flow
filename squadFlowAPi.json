@@ -224,6 +224,37 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "424c14fd-afa5-4a3f-a133-f37531c373a4",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "notifications",
+      "responses": [
+        {
+          "uuid": "c5ee5252-b29f-424c-bcf6-ec7ea0635770",
+          "body": "[\n  {\n    \"id\": 1,\n    \"title\": \"Sprint deadline approaching\",\n    \"author\": \"Mariana Ribeiro\",\n    \"description\": \"The current sprint ends tomorrow. Please review your assigned tasks and update their status before the deadline.\",\n    \"sentAt\": \"2026-10-20T14:30:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"Critical\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"New team member assigned\",\n    \"author\": \"Lucas Ferreira\",\n    \"description\": \"A new frontend developer has been assigned to your squad. Check the team directory for more information.\",\n    \"sentAt\": \"2026-10-20T13:15:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"Medium\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"Project delivery delayed\",\n    \"author\": \"Camila Duarte\",\n    \"description\": \"The Amazon project delivery date has been postponed due to unexpected technical issues. Review the updated timeline.\",\n    \"sentAt\": \"2026-10-20T11:45:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"High\"\n  },\n  {\n    \"id\": 4,\n    \"title\": \"Weekly performance report available\",\n    \"author\": \"Rafael Mendes\",\n    \"description\": \"The weekly squad performance report is ready. Review capacity utilization, completed tasks, and pending activities.\",\n    \"sentAt\": \"2026-10-20T09:00:00-03:00\",\n    \"isRead\": true,\n    \"priority\": \"Low\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"Critical production bug detected\",\n    \"author\": \"João Santos\",\n    \"description\": \"A critical bug was detected in the production environment. The engineering team is investigating the issue.\",\n    \"sentAt\": \"2026-10-19T17:40:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"Critical\"\n  },\n  {\n    \"id\": 6,\n    \"title\": \"Squad capacity above threshold\",\n    \"author\": \"Beatriz Lima\",\n    \"description\": \"Your squad has reached 100% capacity. Consider reviewing workload distribution to prevent over-allocation.\",\n    \"sentAt\": \"2026-10-19T15:20:00-03:00\",\n    \"isRead\": true,\n    \"priority\": \"High\"\n  },\n  {\n    \"id\": 7,\n    \"title\": \"Design review scheduled\",\n    \"author\": \"Maria Silva\",\n    \"description\": \"A design review meeting has been scheduled for Thursday. Please review the updated prototypes before the meeting.\",\n    \"sentAt\": \"2026-10-19T12:10:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"Medium\"\n  },\n  {\n    \"id\": 8,\n    \"title\": \"Task assigned to you\",\n    \"author\": \"Felipe Rocha\",\n    \"description\": \"You have been assigned a new task related to the dashboard improvements. Check the task board for details.\",\n    \"sentAt\": \"2026-10-18T16:35:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"Medium\"\n  },\n  {\n    \"id\": 9,\n    \"title\": \"Security update required\",\n    \"author\": \"Bruno Carvalho\",\n    \"description\": \"A security dependency requires an update. Please prioritize the patch and verify that the application remains stable.\",\n    \"sentAt\": \"2026-10-18T10:50:00-03:00\",\n    \"isRead\": true,\n    \"priority\": \"High\"\n  },\n  {\n    \"id\": 10,\n    \"title\": \"Monthly planning completed\",\n    \"author\": \"Larissa Monteiro\",\n    \"description\": \"The monthly planning session has been completed. The upcoming goals and priorities are now available for review.\",\n    \"sentAt\": \"2026-10-17T14:00:00-03:00\",\n    \"isRead\": true,\n    \"priority\": \"Low\"\n  },\n  {\n    \"id\": 11,\n    \"title\": \"Project milestone reached\",\n    \"author\": \"Gabriel Ferreira\",\n    \"description\": \"The team has successfully completed the integration milestone. Thank you to everyone who contributed.\",\n    \"sentAt\": \"2026-10-17T09:25:00-03:00\",\n    \"isRead\": true,\n    \"priority\": \"Low\"\n  },\n  {\n    \"id\": 12,\n    \"title\": \"Pending task requires attention\",\n    \"author\": \"Ana Costa\",\n    \"description\": \"A task assigned to your squad has remained pending longer than expected. Please review its status and next steps.\",\n    \"sentAt\": \"2026-10-16T16:15:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"High\"\n  },\n  {\n    \"id\": 13,\n    \"title\": \"Team availability updated\",\n    \"author\": \"Eduardo Ramos\",\n    \"description\": \"Team availability data has been updated. Check the allocation dashboard to see the latest changes.\",\n    \"sentAt\": \"2026-10-15T11:30:00-03:00\",\n    \"isRead\": true,\n    \"priority\": \"Medium\"\n  },\n  {\n    \"id\": 14,\n    \"title\": \"Scheduled maintenance notice\",\n    \"author\": \"System Administrator\",\n    \"description\": \"The platform will undergo scheduled maintenance this weekend. Some features may be temporarily unavailable.\",\n    \"sentAt\": \"2026-10-14T08:00:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"Medium\"\n  },\n  {\n    \"id\": 15,\n    \"title\": \"Project deadline at risk\",\n    \"author\": \"Thiago Barbosa\",\n    \"description\": \"The Netflix project is behind schedule. The squad should review outstanding tasks and agree on corrective actions.\",\n    \"sentAt\": \"2026-10-12T13:45:00-03:00\",\n    \"isRead\": false,\n    \"priority\": \"Critical\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
@@ -254,6 +285,10 @@
     {
       "type": "route",
       "uuid": "2c68fb94-4058-4786-bcb1-f5614c9a7265"
+    },
+    {
+      "type": "route",
+      "uuid": "424c14fd-afa5-4a3f-a133-f37531c373a4"
     }
   ],
   "proxyMode": false,
