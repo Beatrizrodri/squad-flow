@@ -5,7 +5,7 @@ const BASE_URL = 'http://localhost:3000'
 export const squadService = {
   async getAll(): Promise<Squad[]> {
     const res = await fetch(`${BASE_URL}/squads`)
-    if (!res.ok) throw new Error('Erro ao listar squads')
+    if (!res.ok) throw new Error('Error listing squads')
     return res.json()
   },
 
@@ -15,7 +15,7 @@ export const squadService = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ status })
     })
-    if (!res.ok) throw new Error('Erro ao atualizar status do squad')
+    if (!res.ok) throw new Error('Error updating squad status')
     return res.json()
   },
 
@@ -23,6 +23,6 @@ export const squadService = {
     const res = await fetch(`${BASE_URL}/squads/${id}`, {
       method: 'DELETE'
     })
-    if (!res.ok) throw new Error('Erro ao deletar squad')
+    if (!res.ok) throw new Error('Error deleting squad')
   }
 }

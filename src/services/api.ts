@@ -14,7 +14,7 @@ export async function request<T>(
 
   if (!response.ok) {
     throw new Error(
-      `Erro na requisição (${response.status}): ${response.statusText}`
+      `Request error (${response.status}): ${response.statusText}`
     )
   }
 

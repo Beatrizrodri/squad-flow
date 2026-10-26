@@ -6,10 +6,14 @@
   height: 100px;
   padding: 20px;
   border-radius: 8px;
-  background-color: white;
+  background-color: rgb(223, 234, 247);
   border-left: 6px solid transparent;
 
   font-family: Roboto, sans-serif;
+}
+
+.isRead {
+  background-color: white;
 }
 
 .title {
