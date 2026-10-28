@@ -255,6 +255,37 @@
       "responseMode": null,
       "streamingMode": null,
       "streamingInterval": 0
+    },
+    {
+      "uuid": "fa51cd27-830d-463e-822e-572408f22367",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "settings",
+      "responses": [
+        {
+          "uuid": "083fee45-0345-4587-855c-ef7dc15d88e3",
+          "body": "\n  {\n    \"name\": \"Mariana Ribeiro\",\n    \"role\": \"Scrum Master\",\n    \"email\": \"mariana.ribeiro@example.com\",\n    \"biography\": \"Agile team facilitator, focused on removing impediments, fostering collaboration among people, and driving continuous improvement.\",\n    \"phone\": 31987657863\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
@@ -289,6 +320,10 @@
     {
       "type": "route",
       "uuid": "424c14fd-afa5-4a3f-a133-f37531c373a4"
+    },
+    {
+      "type": "route",
+      "uuid": "fa51cd27-830d-463e-822e-572408f22367"
     }
   ],
   "proxyMode": false,

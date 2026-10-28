@@ -1,0 +1,173 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  background-color: #b9bfd0;
+  padding: 28px;
+
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 28px;
+}
+
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+
+  width: 60%;
+  height: 100%;
+
+  background-color: white;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(183, 174, 174);
+}
+
+.profileInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: 28px;
+  min-width: 120px;
+  min-height: 120px;
+  border-radius: 100%;
+  background-color: #1a365d;
+  color: white;
+}
+
+.userName {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.contentInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+}
+
+.userInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.input {
+  height: 40px;
+  border: 0.5px solid #929292;
+  border-radius: 4px;
+  background-color: #ededed;
+  padding: 0 12px;
+  font-size: 16px;
+
+  &:focus {
+    outline: 2px solid #557ed0;
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: end;
+  gap: 28px;
+}
+
+.cancelButton {
+  border: none;
+  border-radius: 8px;
+  background-color: #31558b;
+  color: white;
+  padding: 14px 20px;
+  font-size: 18px;
+}
+
+.confirmButton {
+  border: none;
+  border-radius: 8px;
+  background-color: #318b33;
+  color: white;
+  padding: 14px 20px;
+  font-size: 18px;
+}
+
+.preferencesSettings {
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  height: 100%;
+
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px 0 28px 0;
+  border-top: 1px solid rgb(183, 174, 174);
+  border-bottom: 1px solid rgb(183, 174, 174);
+}
+
+.themeOptions {
+  display: flex;
+  gap: 20px;
+
+  button {
+    width: 48%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18;
+  }
+}
+
+.notificationSettings {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 18px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+}

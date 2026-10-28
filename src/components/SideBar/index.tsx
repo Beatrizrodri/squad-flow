@@ -33,6 +33,10 @@ export function SideBar() {
     navigate('/notifications')
   }
 
+  const handleNavigateToSettings = (): void => {
+    navigate('/settings')
+  }
+
   return (
     <>
       <div className={styles.container}>
@@ -67,7 +71,7 @@ export function SideBar() {
             <IoNotificationsOutline size={22} /> Notifications
           </button>
 
-          <button className={styles.option}>
+          <button className={styles.option} onClick={handleNavigateToSettings}>
             <LuSettings size={22} /> Settings
           </button>
         </div>
