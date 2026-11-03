@@ -103,7 +103,7 @@ export function AllocationTable({
             height: 140
           }}
         >
-          <CircularProgress size={30} sx={{ color: '#1a365d' }} />
+          <CircularProgress size={30} sx={{ color: 'var(--theme-btn-active-bg)' }} />
         </Box>
       ) : errorMessage ? (
         <Box sx={{ p: 3, textAlign: 'center' }}>
@@ -121,8 +121,9 @@ export function AllocationTable({
               <TableCell
                 sx={{
                   fontWeight: 700,
-                  color: '#475569',
-                  backgroundColor: '#f1f5f9',
+                  color: 'var(--table-header-text)',
+                  backgroundColor: 'var(--table-header-bg)',
+                  borderColor: 'var(--table-cell-border)',
                   width: 60
                 }}
               >
@@ -131,8 +132,9 @@ export function AllocationTable({
               <TableCell
                 sx={{
                   fontWeight: 700,
-                  color: '#475569',
-                  backgroundColor: '#f1f5f9'
+                  color: 'var(--table-header-text)',
+                  backgroundColor: 'var(--table-header-bg)',
+                  borderColor: 'var(--table-cell-border)'
                 }}
               >
                 Names
@@ -140,8 +142,9 @@ export function AllocationTable({
               <TableCell
                 sx={{
                   fontWeight: 700,
-                  color: '#475569',
-                  backgroundColor: '#f1f5f9'
+                  color: 'var(--table-header-text)',
+                  backgroundColor: 'var(--table-header-bg)',
+                  borderColor: 'var(--table-cell-border)'
                 }}
               >
                 Roles
@@ -150,8 +153,9 @@ export function AllocationTable({
                 align="center"
                 sx={{
                   fontWeight: 700,
-                  color: '#475569',
-                  backgroundColor: '#f1f5f9',
+                  color: 'var(--table-header-text)',
+                  backgroundColor: 'var(--table-header-bg)',
+                  borderColor: 'var(--table-cell-border)',
                   minWidth: 150
                 }}
               >
@@ -166,7 +170,12 @@ export function AllocationTable({
                 <TableCell
                   colSpan={4}
                   align="center"
-                  sx={{ py: 3, color: '#64748b', fontSize: '0.875rem' }}
+                  sx={{
+                    py: 3,
+                    color: 'var(--text-secondary)',
+                    fontSize: '0.875rem',
+                    borderColor: 'var(--table-cell-border)'
+                  }}
                 >
                   Nenhum membro encontrado.
                 </TableCell>
@@ -179,9 +188,14 @@ export function AllocationTable({
                   <TableRow
                     key={row.id}
                     hover
-                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                    sx={{
+                      '&:last-child td, &:last-child th': { border: 0 },
+                      '&:hover': {
+                        backgroundColor: 'var(--bg-card-hover) !important'
+                      }
+                    }}
                   >
-                    <TableCell>
+                    <TableCell sx={{ borderColor: 'var(--table-cell-border)' }}>
                       <Avatar
                         src={row.avatarUrl}
                         sx={{
@@ -198,14 +212,30 @@ export function AllocationTable({
                     <TableCell
                       component="th"
                       scope="row"
-                      sx={{ fontWeight: 600, color: '#111827' }}
+                      sx={{
+                        fontWeight: 600,
+                        color: 'var(--text-primary)',
+                        borderColor: 'var(--table-cell-border)'
+                      }}
                     >
                       {row.name}
                     </TableCell>
 
-                    <TableCell sx={{ color: '#4b5563' }}>{row.role}</TableCell>
+                    <TableCell
+                      sx={{
+                        color: 'var(--text-secondary)',
+                        borderColor: 'var(--table-cell-border)'
+                      }}
+                    >
+                      {row.role}
+                    </TableCell>
 
-                    <TableCell sx={{ minWidth: 150 }}>
+                    <TableCell
+                      sx={{
+                        minWidth: 150,
+                        borderColor: 'var(--table-cell-border)'
+                      }}
+                    >
                       <Chip
                         label={row.availability}
                         size="small"
@@ -218,10 +248,14 @@ export function AllocationTable({
                           borderRadius: 4,
                           border: '1px solid',
                           backgroundColor: fullyAllocated
-                            ? '#f3f4f6'
-                            : '#edf7ed',
-                          color: fullyAllocated ? '#4b5563' : '#2e7d32',
-                          borderColor: fullyAllocated ? '#e5e7eb' : '#c8e6c9',
+                            ? 'var(--status-neutral-bg)'
+                            : 'var(--status-success-bg)',
+                          color: fullyAllocated
+                            ? 'var(--status-neutral-text)'
+                            : 'var(--status-success-text)',
+                          borderColor: fullyAllocated
+                            ? 'var(--status-neutral-border)'
+                            : 'var(--status-success-border)',
                           '& .MuiChip-label': {
                             width: '100%',
                             whiteSpace: 'pre-line',
@@ -250,9 +284,9 @@ export function AllocationTable({
           height: height ?? 'auto',
           display: height ? 'flex' : 'block',
           flexDirection: 'column',
-          bgcolor: '#ffffff',
+          bgcolor: 'var(--bg-card)',
           borderRadius: 1.5,
-          border: '1px solid #e2e8f0',
+          border: '1px solid var(--border-color)',
           overflow: 'hidden'
         }}
       >
@@ -273,13 +307,15 @@ export function AllocationTable({
       }}
     >
       <Paper
-        elevation={1}
+        elevation={0}
         sx={{
           borderRadius: 2,
           overflow: 'hidden',
           height: height ? '100%' : 'auto',
           display: height ? 'flex' : 'block',
-          flexDirection: 'column'
+          flexDirection: 'column',
+          bgcolor: 'var(--bg-card)',
+          color: 'var(--text-primary)'
         }}
       >
         {showTitle && (
@@ -299,7 +335,7 @@ export function AllocationTable({
                 fontWeight: 800,
                 fontSize: 18,
                 letterSpacing: '0.04em',
-                color: '#1a1a1a',
+                color: 'var(--text-primary)',
                 textTransform: 'uppercase'
               }}
             >

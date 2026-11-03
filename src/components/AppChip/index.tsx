@@ -9,17 +9,47 @@ interface ChipStyle {
 }
 
 const CHIP_STYLES: Record<ChipVariant, ChipStyle> = {
-  // Status
-  'On Track': { bg: '#EBFDF2', text: '#027A48', border: '#A6F4C5' },
-  'At Risk': { bg: '#FFFAEB', text: '#B54708', border: '#FEDF89' },
-  Delayed: { bg: '#FEF3F2', text: '#B42318', border: '#FECDCA' },
-  'In Progress': { bg: '#EFF8FF', text: '#175CD3', border: '#B2DDFF' },
-  'In Planning': { bg: '#F8F9FA', text: '#344054', border: '#EAECF0' },
+  'On Track': {
+    bg: 'var(--status-success-bg)',
+    text: 'var(--status-success-text)',
+    border: 'var(--status-success-border)'
+  },
+  'At Risk': {
+    bg: 'var(--status-warning-bg)',
+    text: 'var(--status-warning-text)',
+    border: 'var(--status-warning-border)'
+  },
+  Delayed: {
+    bg: 'var(--status-danger-bg)',
+    text: 'var(--status-danger-text)',
+    border: 'var(--status-danger-border)'
+  },
+  'In Progress': {
+    bg: 'var(--status-info-bg)',
+    text: 'var(--status-info-text)',
+    border: 'var(--status-info-border)'
+  },
+  'In Planning': {
+    bg: 'var(--status-neutral-bg)',
+    text: 'var(--status-neutral-text)',
+    border: 'var(--status-neutral-border)'
+  },
 
-  // Priorities
-  'High Priority': { bg: '#FEE4E2', text: '#D92D20', border: '#FECDCA' },
-  'Medium Priority': { bg: '#FEF0C7', text: '#B54708', border: '#FEDF89' },
-  'Low Priority': { bg: '#E0F2FE', text: '#026AA2', border: '#B9E6FE' }
+  'High Priority': {
+    bg: 'var(--status-danger-bg)',
+    text: 'var(--status-danger-text)',
+    border: 'var(--status-danger-border)'
+  },
+  'Medium Priority': {
+    bg: 'var(--status-warning-bg)',
+    text: 'var(--status-warning-text)',
+    border: 'var(--status-warning-border)'
+  },
+  'Low Priority': {
+    bg: 'var(--status-info-bg)',
+    text: 'var(--status-info-text)',
+    border: 'var(--status-info-border)'
+  }
 }
 
 interface AppChipProps {
@@ -28,9 +58,9 @@ interface AppChipProps {
 
 export const AppChip = ({ label }: AppChipProps) => {
   const style = CHIP_STYLES[label] ?? {
-    bg: '#F8F9FA',
-    text: '#344054',
-    border: '#EAECF0'
+    bg: 'var(--status-neutral-bg)',
+    text: 'var(--status-neutral-text)',
+    border: 'var(--status-neutral-border)'
   }
 
   return (

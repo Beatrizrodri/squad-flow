@@ -1,6 +1,11 @@
 import { RouterProvider } from 'react-router-dom'
 import { router } from './routes'
+import { ThemeProvider } from './contexts/ThemeContext'
 
 export function App() {
-  return <RouterProvider router={router} />
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  )
 }

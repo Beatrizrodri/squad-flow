@@ -111,7 +111,15 @@ export function SquadsTable({
 
   return (
     <div className={styles.container}>
-      <Paper elevation={1} sx={{ borderRadius: 2, overflow: 'hidden' }}>
+      <Paper
+        elevation={0}
+        sx={{
+          borderRadius: 2,
+          overflow: 'hidden',
+          bgcolor: 'var(--bg-card)',
+          color: 'var(--text-primary)'
+        }}
+      >
         {title && (
           <Box
             sx={{
@@ -129,7 +137,7 @@ export function SquadsTable({
                 fontWeight: 800,
                 fontSize: 18,
                 letterSpacing: '0.04em',
-                color: '#1a1a1a',
+                color: 'var(--text-primary)',
                 textTransform: 'uppercase'
               }}
             >
@@ -149,13 +157,20 @@ export function SquadsTable({
             <TableHead>
               <TableRow>
                 {expandable && (
-                  <TableCell sx={{ backgroundColor: '#fafafa', width: 44 }} />
+                  <TableCell
+                    sx={{
+                      backgroundColor: 'var(--table-header-bg)',
+                      borderColor: 'var(--table-cell-border)',
+                      width: 44
+                    }}
+                  />
                 )}
                 <TableCell
                   sx={{
                     fontWeight: 700,
-                    color: '#222',
-                    backgroundColor: '#fafafa',
+                    color: 'var(--table-header-text)',
+                    backgroundColor: 'var(--table-header-bg)',
+                    borderColor: 'var(--table-cell-border)',
                     width: 60
                   }}
                 >
@@ -164,8 +179,9 @@ export function SquadsTable({
                 <TableCell
                   sx={{
                     fontWeight: 700,
-                    color: '#222',
-                    backgroundColor: '#fafafa'
+                    color: 'var(--table-header-text)',
+                    backgroundColor: 'var(--table-header-bg)',
+                    borderColor: 'var(--table-cell-border)'
                   }}
                 >
                   Name
@@ -174,8 +190,9 @@ export function SquadsTable({
                   align="center"
                   sx={{
                     fontWeight: 700,
-                    color: '#222',
-                    backgroundColor: '#fafafa'
+                    color: 'var(--table-header-text)',
+                    backgroundColor: 'var(--table-header-bg)',
+                    borderColor: 'var(--table-cell-border)'
                   }}
                 >
                   Members
@@ -184,8 +201,9 @@ export function SquadsTable({
                   align="center"
                   sx={{
                     fontWeight: 700,
-                    color: '#222',
-                    backgroundColor: '#fafafa'
+                    color: 'var(--table-header-text)',
+                    backgroundColor: 'var(--table-header-bg)',
+                    borderColor: 'var(--table-cell-border)'
                   }}
                 >
                   Capacity
@@ -193,8 +211,9 @@ export function SquadsTable({
                 <TableCell
                   sx={{
                     fontWeight: 700,
-                    color: '#222',
-                    backgroundColor: '#fafafa'
+                    color: 'var(--table-header-text)',
+                    backgroundColor: 'var(--table-header-bg)',
+                    borderColor: 'var(--table-cell-border)'
                   }}
                 >
                   Project
@@ -202,8 +221,9 @@ export function SquadsTable({
                 <TableCell
                   sx={{
                     fontWeight: 700,
-                    color: '#222',
-                    backgroundColor: '#fafafa'
+                    color: 'var(--table-header-text)',
+                    backgroundColor: 'var(--table-header-bg)',
+                    borderColor: 'var(--table-cell-border)'
                   }}
                 >
                   Status
@@ -213,8 +233,9 @@ export function SquadsTable({
                     align="center"
                     sx={{
                       fontWeight: 700,
-                      color: '#222',
-                      backgroundColor: '#fafafa',
+                      color: 'var(--table-header-text)',
+                      backgroundColor: 'var(--table-header-bg)',
+                      borderColor: 'var(--table-cell-border)',
                       width: 50
                     }}
                   >
@@ -226,8 +247,9 @@ export function SquadsTable({
                     align="center"
                     sx={{
                       fontWeight: 700,
-                      color: '#222',
-                      backgroundColor: '#fafafa',
+                      color: 'var(--table-header-text)',
+                      backgroundColor: 'var(--table-header-bg)',
+                      borderColor: 'var(--table-cell-border)',
                       width: 50
                     }}
                   >

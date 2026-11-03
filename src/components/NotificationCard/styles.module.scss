@@ -6,27 +6,30 @@
   height: 100px;
   padding: 20px;
   border-radius: 8px;
-  background-color: rgb(223, 234, 247);
-  border-left: 6px solid transparent;
+  background-color: var(--notification-unread-bg);
+  border: 1px solid var(--border-color);
+  border-left: 6px solid #31558b;
+  color: var(--text-primary);
 
   font-family: Roboto, sans-serif;
 }
 
 .isRead {
-  background-color: white;
+  background-color: var(--bg-card);
+  border-left: 6px solid transparent;
 }
 
 .title {
   font-size: 18px;
   font-weight: 500;
+  color: var(--text-primary);
 }
 
 .author {
   display: flex;
   align-items: center;
   gap: 12px;
-
-  border-right: 1px solid rgb(212, 212, 212);
+  border-right: 1px solid var(--border-light);
 }
 
 .avatar {
@@ -45,7 +48,7 @@
 .authorName {
   font-size: 16px;
   font-weight: 400;
-  color: #333333;
+  color: var(--text-primary);
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -56,7 +59,8 @@
   flex-direction: column;
   gap: 10px;
   padding: 10px 40px 10px 40px;
-  border-right: 1px solid rgb(212, 212, 212);
+  border-right: 1px solid var(--border-light);
+  color: var(--text-secondary);
 }
 
 .headerDescription {
@@ -74,10 +78,13 @@
 .readButton {
   display: flex;
   align-items: center;
-  padding: 2px 8px 2px 8px;
+  padding: 4px 10px;
   gap: 8px;
   cursor: pointer;
-
+  background-color: var(--theme-btn-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
   font-size: 16px;
 }
 
@@ -86,8 +93,13 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
 
-  :hover {
+  &:hover {
     color: #b91c1c;
     background-color: #fee2e2;
   }

@@ -3,3 +3,125 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root,
+[data-theme='light'] {
+  --bg-app: #b9bfd0;
+  --bg-card: #ffffff;
+  --bg-card-secondary: #f8fafc;
+  --bg-card-hover: #f1f5f9;
+  --text-primary: #111827;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --border-color: rgb(183, 174, 174);
+  --border-light: rgb(212, 212, 212);
+  --input-bg: #ededed;
+  --input-border: #929292;
+  --header-bg: #ffffff;
+  --header-text: #111827;
+  --sidebar-bg: #0a1f3c;
+  --sidebar-text: #9fa5b3;
+  --sidebar-hover: #2c3e54;
+  --notification-unread-bg: rgb(223, 234, 247);
+  --notification-header-bg: rgb(224, 224, 224);
+  --theme-btn-bg: #ededed;
+  --theme-btn-color: #333333;
+  --theme-btn-active-bg: #31558b;
+  --theme-btn-active-color: #ffffff;
+  --table-header-bg: #f1f5f9;
+  --table-header-text: #475569;
+  --table-cell-border: #e2e8f0;
+
+  /* Chip / Status Tokens */
+  --status-success-bg: #ebfdf2;
+  --status-success-text: #027a48;
+  --status-success-border: #a6f4c5;
+  --status-success-dot: #2e7d32;
+
+  --status-warning-bg: #fffdeb;
+  --status-warning-text: #b54708;
+  --status-warning-border: #fedf89;
+  --status-warning-dot: #ed6c02;
+
+  --status-danger-bg: #fef3f2;
+  --status-danger-text: #b42318;
+  --status-danger-border: #fecdca;
+  --status-danger-dot: #d32f2f;
+
+  --status-info-bg: #eff8ff;
+  --status-info-text: #175cd3;
+  --status-info-border: #b2ddff;
+  --status-info-dot: #175cd3;
+
+  --status-neutral-bg: #f8f9fa;
+  --status-neutral-text: #344054;
+  --status-neutral-border: #eaecf0;
+  --status-neutral-dot: #64748b;
+
+  --color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg-app: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card-secondary: #243248;
+  --bg-card-hover: #293852;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-color: #334155;
+  --border-light: #334155;
+  --input-bg: #0b1322;
+  --input-border: #475569;
+  --header-bg: #1e293b;
+  --header-text: #f8fafc;
+  --sidebar-bg: #020617;
+  --sidebar-text: #94a3b8;
+  --sidebar-hover: #1e293b;
+  --notification-unread-bg: #1e3a5f;
+  --notification-header-bg: #1e293b;
+  --theme-btn-bg: #334155;
+  --theme-btn-color: #f8fafc;
+  --theme-btn-active-bg: #3b82f6;
+  --theme-btn-active-color: #ffffff;
+  --table-header-bg: #243248;
+  --table-header-text: #cbd5e1;
+  --table-cell-border: #334155;
+
+  /* Chip / Status Tokens */
+  --status-success-bg: rgba(16, 185, 129, 0.16);
+  --status-success-text: #34d399;
+  --status-success-border: rgba(52, 211, 153, 0.35);
+  --status-success-dot: #34d399;
+
+  --status-warning-bg: rgba(245, 158, 11, 0.16);
+  --status-warning-text: #fbbf24;
+  --status-warning-border: rgba(251, 191, 36, 0.35);
+  --status-warning-dot: #fbbf24;
+
+  --status-danger-bg: rgba(239, 68, 68, 0.18);
+  --status-danger-text: #fb9292;
+  --status-danger-border: rgba(224, 118, 118, 0.645);
+  --status-danger-dot: #fb9292;
+
+  --status-info-bg: rgba(59, 130, 246, 0.18);
+  --status-info-text: #60a5fa;
+  --status-info-border: rgba(96, 165, 250, 0.35);
+  --status-info-dot: #60a5fa;
+
+  --status-neutral-bg: rgba(148, 163, 184, 0.14);
+  --status-neutral-text: #cbd5e1;
+  --status-neutral-border: rgba(148, 163, 184, 0.28);
+  --status-neutral-dot: #94a3b8;
+
+  --color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  color-scheme: var(--color-scheme);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

@@ -1,13 +1,15 @@
 import Switch from '@mui/material/Switch'
-import { LuUserRound } from 'react-icons/lu'
+import { LuMoonStar, LuSun, LuUserRound } from 'react-icons/lu'
 import styles from './styles.module.scss'
 import { useEffect, useState } from 'react'
 import type { User } from '../../types'
 import { userService } from '../../services/userService'
+import { useTheme } from '../../contexts/ThemeContext'
 
 export function SettingsPage() {
   const [user, setUser] = useState<User | null>(null)
   const [isLoading, setIsLoading] = useState(true)
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     async function loadUser() {
@@ -124,8 +126,26 @@ export function SettingsPage() {
           <div className={styles.theme}>
             <h2>Theme</h2>
             <div className={styles.themeOptions}>
-              <button>Light</button>
-              <button>Dark</button>
+              <button
+                type="button"
+                className={
+                  theme === 'light' ? styles.activeTheme : styles.themeButton
+                }
+                onClick={() => setTheme('light')}
+              >
+                <LuSun size={20} />
+                <span>Light</span>
+              </button>
+              <button
+                type="button"
+                className={
+                  theme === 'dark' ? styles.activeTheme : styles.themeButton
+                }
+                onClick={() => setTheme('dark')}
+              >
+                <LuMoonStar size={20} />
+                <span>Dark</span>
+              </button>
             </div>
           </div>
 

@@ -2,12 +2,15 @@
   width: 100%;
   height: 100%;
   overflow: auto;
+  background-color: var(--bg-app);
 }
 
 .header {
   height: 100px;
-  background-color: rgb(224, 224, 224);
+  background-color: var(--notification-header-bg);
   padding: 18px 40px 40px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -21,20 +24,21 @@
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 20px;
+  color: var(--text-primary);
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: #b9bfd0;
+  background-color: var(--bg-app);
   padding: 28px 40px 28px 40px;
 }
 
 .tabs {
   display: flex;
   gap: 12px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .tabButton {
@@ -43,25 +47,25 @@
   padding: 10px 14px;
   font-size: 16px;
   font-weight: 600;
-  color: #64748b;
+  color: var(--text-secondary);
   cursor: pointer;
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease;
 
   &:hover {
-    color: #1e293b;
+    color: var(--text-primary);
   }
 
   &.active {
-    color: black;
+    color: var(--text-primary);
     font-weight: 800;
-    border-bottom-color: black;
+    border-bottom-color: var(--text-primary);
   }
 }
 
 .emptyState {
   padding: 40px;
   text-align: center;
-  color: #94a3b8;
+  color: var(--text-secondary);
   font-size: 20px;
 }

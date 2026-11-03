@@ -7,21 +7,21 @@ export const StatusStyles: Record<
   { bg: string; text: string; dot: string; border: string }
 > = {
   'On Track': {
-    bg: '#e8f5e9',
-    text: '#2e7d32',
-    dot: '#2e7d32',
-    border: '#a5d6a7'
+    bg: 'var(--status-success-bg)',
+    text: 'var(--status-success-text)',
+    dot: 'var(--status-success-dot)',
+    border: 'var(--status-success-border)'
   },
   'At Risk': {
-    bg: '#fff8e1',
-    text: '#ed6c02',
-    dot: '#ed6c02',
-    border: '#ffe082'
+    bg: 'var(--status-warning-bg)',
+    text: 'var(--status-warning-text)',
+    dot: 'var(--status-warning-dot)',
+    border: 'var(--status-warning-border)'
   },
   Delayed: {
-    bg: '#fdeeed',
-    text: '#d32f2f',
-    dot: '#d32f2f',
-    border: '#ef9a9a'
+    bg: 'var(--status-danger-bg)',
+    text: 'var(--status-danger-text)',
+    dot: 'var(--status-danger-dot)',
+    border: 'var(--status-danger-border)'
   }
 }

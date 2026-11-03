@@ -1,8 +1,9 @@
 .container {
   width: 100%;
   height: calc(100vh - 80px);
-  background-color: #b9bfd0;
+  background-color: var(--bg-app);
   padding: 28px;
+  color: var(--text-primary);
 }
 
 .title {
@@ -10,4 +11,5 @@
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 20px;
+  color: var(--text-primary);
 }

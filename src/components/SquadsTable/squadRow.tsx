@@ -82,7 +82,9 @@ export function SquadRow({
         sx={{
           ...(expandable
             ? { '& > *': { borderBottom: 'unset' } }
-            : { '&:last-child td, &:last-child th': { border: 0 } })
+            : { '&:last-child td, &:last-child th': { border: 0 } }),
+          '&:hover': { backgroundColor: 'var(--bg-card-hover) !important' },
+          '& td, & th': { borderColor: 'var(--table-cell-border)' }
         }}
       >
         {expandable && (
@@ -108,20 +110,20 @@ export function SquadRow({
         <TableCell
           component="th"
           scope="row"
-          sx={{ fontWeight: 600, color: '#111827' }}
+          sx={{ fontWeight: 600, color: 'var(--text-primary)' }}
         >
           {row.name}
         </TableCell>
 
-        <TableCell align="center" sx={{ color: '#4b5563', fontWeight: 500 }}>
+        <TableCell align="center" sx={{ color: 'var(--text-secondary)', fontWeight: 500 }}>
           {row.members}
         </TableCell>
 
-        <TableCell align="center" sx={{ color: '#4b5563', fontWeight: 600 }}>
+        <TableCell align="center" sx={{ color: 'var(--text-secondary)', fontWeight: 600 }}>
           {row.capacity}%
         </TableCell>
 
-        <TableCell sx={{ color: '#4b5563' }}>{row.project}</TableCell>
+        <TableCell sx={{ color: 'var(--text-secondary)' }}>{row.project}</TableCell>
 
         <TableCell>
           <Chip
@@ -237,7 +239,7 @@ export function SquadRow({
             style={{
               paddingBottom: 0,
               paddingTop: 0,
-              backgroundColor: '#f8fafc'
+              backgroundColor: 'var(--bg-card-secondary)'
             }}
             colSpan={totalColumns}
           >
@@ -248,7 +250,7 @@ export function SquadRow({
                   sx={{
                     fontWeight: 700,
                     mb: 1.5,
-                    color: '#334155',
+                    color: 'var(--text-primary)',
                     textTransform: 'uppercase',
                     fontSize: 13,
                     letterSpacing: '0.04em'

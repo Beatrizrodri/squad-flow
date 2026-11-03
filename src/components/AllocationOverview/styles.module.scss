@@ -4,7 +4,9 @@
   display: flex;
   flex-direction: column;
   padding: 16px;
-  background-color: #ffffff;
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   font-family: Roboto, sans-serif;
@@ -14,7 +16,7 @@
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 0.5px;
-  color: #111827;
+  color: var(--text-primary);
   text-transform: uppercase;
   margin: 0 0 20px 0;
 }
@@ -51,7 +53,7 @@
 .statValue {
   font-size: 34px;
   font-weight: 800;
-  color: #111827;
+  color: var(--text-primary);
   line-height: 1;
 }
 
@@ -60,13 +62,13 @@
   font-family: Poppins, sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #6b7280;
+  color: var(--text-secondary);
 }
 
 .divider {
   width: 1px;
   height: 40px;
-  background-color: #e5e7eb;
+  background-color: var(--border-color);
 }
 
 .legendList {
@@ -76,12 +78,14 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  color: var(--text-primary);
 }
 
 .legendItem {
   display: flex;
   align-items: center;
   gap: 12px;
+  color: var(--text-primary);
 }
 
 .bullet {

@@ -1,4 +1,3 @@
-// src/components/AllocationOverview/index.tsx
 import { useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
 import Box from '@mui/material/Box'
